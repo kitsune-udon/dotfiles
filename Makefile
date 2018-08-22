@@ -21,6 +21,15 @@ clean-tmux:
 	sed -e "/# tmux autostart/d" ~/.bashrc > ~/.bashrc.new
 	mv -f ~/.bashrc.new ~/.bashrc
 
+.phony: zsh
+zsh:
+	echo ". `pwd`/zshrc # zshrc aux" >> ~/.zshrc
+
+.phony: clean-zsh
+clean-zsh:
+	sed -e "/# zshrc aux/d" ~/.zshrc > ~/.zshrc.new
+	mv -f ~/.zshrc.new ~/.zshrc
+
 .phony: clean
-clean: clean-vim clean-tmux
+clean: clean-vim clean-tmux clean-zsh
 
