@@ -1,9 +1,4 @@
 # tmux autostart shellscript
-if [ -z $TMUX ]; then
-  if $(tmux has-session); then
-    tmux attach
-  else
-    tmux
-  fi
+if which tmux >/dev/null 2>&1; then
+  test -z "$TMUX" && (tmux attach || tmux new-session)
 fi
-
