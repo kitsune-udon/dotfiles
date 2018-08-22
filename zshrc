@@ -21,3 +21,6 @@ ssh-add ~/.ssh/id_rsa
 
 # disable Ctrl-S
 stty stop undef
+
+# aliases
+alias ls='ls -F --color'
