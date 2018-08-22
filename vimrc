@@ -59,5 +59,4 @@ set previewheight=5
 set novisualbell
 set noerrorbells
 
-"execute pathogen#infect()
 set ambiwidth=double
