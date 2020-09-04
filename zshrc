@@ -23,4 +23,4 @@ ssh-add ~/.ssh/id_rsa
 stty stop undef
 
 # aliases
-alias ls='ls -F --color'
+alias ls='ls -F --color=auto'
