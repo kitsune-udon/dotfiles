@@ -1,0 +1,6 @@
+[alias]
+s = status
+c = commit
+b = branch
+d = diff
+a = add

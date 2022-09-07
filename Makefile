@@ -45,6 +45,14 @@ clean-tmux-zsh:
 	sed -e "/# tmux autostart/d" ~/.zshrc > ~/.zshrc.new
 	mv -f ~/.zshrc.new ~/.zshrc
 
+.phony: git
+git:
+	cp gitconfig ~/.gitconfig
+
+.phony: clean-git
+clean-git:
+	rm ~/.gitconfig
+
 .phony: clean
 clean:
 
