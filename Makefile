@@ -1,6 +1,6 @@
 .phony: vim
 vim:
-	cp vimrc ~/.vimrc
+	cat /etc/vim/vimrc vimrc > ~/.vimrc
 	mkdir ~/.vim
 	mkdir ~/.vim/swapfiles
 	mkdir ~/.vim/backupfiles
