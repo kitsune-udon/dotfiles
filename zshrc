@@ -24,3 +24,10 @@ stty stop undef
 
 # aliases
 alias ls='ls -F --color=auto'
+alias g='git'
+alias gs='g s'
+alias gb='g b'
+alias gc='g c'
+alias ga='g a'
+alias gd='g d'
+alias pull='git fetch -p && git pull'
